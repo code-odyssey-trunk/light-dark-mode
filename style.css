@@ -106,9 +106,18 @@ img {
 }
 
 /* Projects Section */
+#projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .buttons {
   margin-top: 15px;
   margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button {
@@ -169,18 +178,25 @@ button:hover:not(.outline) {
 p {
   margin: 0;
   line-height: 25px;
+  text-align: center;
 }
 
 /* Contact Section */
 .fab {
   font-size: 100px;
-  margin-right: 50px;
+  margin: 20px;
   cursor: pointer;
   color: var(--primary-color);
 }
 
 .fab:hover {
   color: var(--on-background);
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Dark Mode Toggle */
@@ -257,4 +273,28 @@ input:checked + .slider::before {
 .fas {
   font-size: 30px;
   margin-right: 5px;
+}
+
+/* Phones and tablets */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .image-container {
+    margin: 10px;
+  }
+
+  .social-icons i {
+    width: 50%;
+  }
+
+  #nav {
+    display: flex;
+    flex-direction: column;
+  }
 }
